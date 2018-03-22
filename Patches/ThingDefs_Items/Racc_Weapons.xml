@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+    <defName>Racc_WPPK</defName>
+    <statBases>
+      <Mass>1.0</Mass>
+      <RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
+      <SightsEfficiency>1.0</SightsEfficiency>
+      <ShotSpread>0.1</ShotSpread>
+      <SwayFactor>1.2</SwayFactor>
+      <Bulk>1.50</Bulk>
+      <WorkToMake>20000</WorkToMake>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <Component>3</Component>
+    </costList>
+    <Properties>
+		<recoilAmount>0.10</recoilAmount>
+      <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+      <hasStandardCommand>true</hasStandardCommand>
+      <defaultProjectile>Bullet_RPPK</defaultProjectile>
+      <warmupTime>1.2</warmupTime>
+      <range>24</range>
+      <soundCast>ShotChargeRifle</soundCast>
+      <soundCastTail>GunTail_Medium</soundCastTail>
+      <muzzleFlashScale>9</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+    </Properties>
+    <AmmoUser>
+      <magazineSize>16</magazineSize>
+      <reloadTime>4</reloadTime>
+      <ammoSet>AmmoSet_RPPK</ammoSet>
+    </AmmoUser>
+    <FireModes>
+    	<aiAimMode>AimedShot</aiAimMode>
+    </FireModes>
+    <weaponTags>
+      <li>RPistol</li>
+      <li>BallisticShield_ValidSidearm</li>
+      <li>MedievalShields_ValidSidearm</li>
+    </weaponTags>
+  </Operation>
+  
+</Patch>
